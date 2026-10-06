@@ -252,7 +252,7 @@ p { margin: 0 0 1em; }
 }
 .mentor-alt .mentor-photo::before { inset: 18px 18px -18px -18px; }
 .mentor-photo img {
-  position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%;
+  position: relative; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%;
   border-radius: 999px 999px 28px 28px; background: var(--orange);
 }
 .mentor-body h3 { font-size: clamp(2.2rem, 4vw, 3.2rem); color: #f0a25c; }
