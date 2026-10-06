@@ -261,17 +261,20 @@ p { margin: 0 0 1em; }
 .tags li { font-size: .84rem; font-weight: 500; padding: .35em .9em; border-radius: 999px; border: 1px solid rgb(251 246 240 / .25); color: var(--cream); }
 
 /* ---------- Duas trajetórias ---------- */
-.together { padding-bottom: 0; overflow: hidden; }
-.together-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: end; }
-.together-copy { padding-bottom: clamp(72px, 10vw, 128px); }
+.together { overflow: hidden; }
+.together-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
 .together h2.script { font-size: clamp(2.4rem, 4.6vw, 3.6rem); transform: rotate(-2deg); transform-origin: left; margin-bottom: .8em; }
 .together p { font-weight: 500; font-size: 1.08rem; }
 .together-highlight { color: var(--green-900); font-weight: 700 !important; font-size: 1.2rem !important; margin-top: 1.4em; }
+.together-photo { position: relative; width: min(100%, 460px); margin-inline: auto; }
+.together-photo::before {
+  content: ""; position: absolute; inset: 18px -18px -18px 18px;
+  border: 2px solid rgb(251 246 240 / .6); border-radius: 999px 999px 28px 28px;
+}
 .together-photo img {
-  width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 16%, #000 86%, transparent), linear-gradient(to bottom, transparent, #000 38%);
-  -webkit-mask-composite: source-in; mask-composite: intersect;
-  mask-image: linear-gradient(to right, transparent, #000 16%, #000 86%, transparent), linear-gradient(to bottom, transparent, #000 38%);
+  position: relative; width: 100%; height: auto;
+  border-radius: 999px 999px 28px 28px;
+  box-shadow: 0 30px 60px -28px rgb(18 60 55 / .55);
 }
 
 /* ---------- FAQ ---------- */
@@ -376,7 +379,7 @@ p { margin: 0 0 1em; }
   .pillar .letter { font-size: 4.2rem; margin-bottom: 0; }
   .mentor, .mentor-alt { grid-template-columns: 1fr; }
   .mentor-photo { max-width: 320px; margin-inline: auto; width: 100%; }
-  .together-copy { padding-bottom: 0; }
+  .together-photo { width: min(100% - 18px, 380px); }
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-bottom { text-align: center; }
 }
