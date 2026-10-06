@@ -290,7 +290,7 @@ p { margin: 0 0 1em; }
 }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { padding: 0 26px 24px; margin: 0; color: var(--ink-soft); }
-.faq a { color: var(--orange); font-weight: 700; }
+.faq a { color: var(--orange); font-weight: 700; white-space: nowrap; }
 
 /* ---------- CTA final ---------- */
 .cta { position: relative; background: var(--sand); padding-top: clamp(72px, 10vw, 120px); overflow: hidden; }
@@ -310,11 +310,25 @@ p { margin: 0 0 1em; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 44px 0 28px; border-bottom: 1px solid rgb(255 255 255 / .1); }
 .footer-logo { height: 60px; width: auto; }
 .footer-info p { margin: 0; }
+.footer-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; }
 .footer-insta { display: inline-flex; align-items: center; gap: .5em; text-decoration: none; color: var(--cream); font-weight: 700; }
 .footer-insta svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 .footer-insta:hover { color: #f0a25c; }
 .footer-bottom { padding: 20px 0 28px; font-size: .84rem; }
 .footer-bottom p { margin: 0; }
+
+/* ---------- WhatsApp ---------- */
+.btn svg.icon-wa, .footer-insta svg.icon-wa, .icon-wa { fill: currentColor; stroke: none; }
+.whatsapp-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 58px; height: 58px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #25d366; color: #fff;
+  box-shadow: 0 12px 28px -10px rgb(18 60 55 / .55);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.whatsapp-float:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 16px 34px -10px rgb(18 60 55 / .6); }
+.whatsapp-float svg { width: 30px; height: 30px; }
 
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0s); }
@@ -379,4 +393,6 @@ p { margin: 0 0 1em; }
   .card-a .script { font-size: 1.35rem; }
   .pain-list li { padding: 14px 16px; }
   .hero-proof br { display: none; }
+  .whatsapp-float { right: 14px; bottom: 14px; width: 52px; height: 52px; }
+  .whatsapp-float svg { width: 27px; height: 27px; }
 }
