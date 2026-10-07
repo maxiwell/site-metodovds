@@ -376,7 +376,8 @@ p { margin: 0 0 1em; }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
   .hero-grid, .split, .together-grid, .strategy-grid { grid-template-columns: 1fr; }
-  .hero-visual { max-width: 560px; margin: 24px auto 0; width: 100%; }
+  .hero-visual { max-width: 560px; margin: calc(min(22%, 124px) + 16px) auto 0; width: 100%; }
+  .avatars { flex-shrink: 0; }
   .audience-grid { grid-template-columns: 1fr; }
   .pillar { grid-template-columns: 1fr; gap: 18px; }
   .pillar-mark { display: flex; align-items: baseline; gap: 16px; }
