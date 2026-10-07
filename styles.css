@@ -255,7 +255,8 @@ p { margin: 0 0 1em; }
   position: relative; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%;
   border-radius: 999px 999px 28px 28px; background: var(--orange);
 }
-.mentor-body h3 { font-size: clamp(2.2rem, 4vw, 3.2rem); color: #f0a25c; }
+.mentor-body h3 { font-size: clamp(2.2rem, 4vw, 3.2rem); color: #f0a25c; margin-bottom: .2em; }
+.mentor-crp { font-size: .82rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--cream) !important; opacity: .9; margin-bottom: 1.2rem; }
 .mentor-body p { color: rgb(251 246 240 / .82); }
 .tags { list-style: none; padding: 0; margin: 0 0 1.6rem; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { font-size: .84rem; font-weight: 500; padding: .35em .9em; border-radius: 999px; border: 1px solid rgb(251 246 240 / .25); color: var(--cream); }
