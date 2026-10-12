@@ -303,7 +303,7 @@ p { margin: 0 0 1em; }
 .cta { position: relative; background: var(--sand); padding-top: clamp(72px, 10vw, 120px); overflow: hidden; }
 .cta-inner { text-align: center; position: relative; z-index: 2; }
 .cta-script { font-size: clamp(2.4rem, 5vw, 3.8rem); transform: rotate(-2deg); margin-bottom: .5rem; }
-.cta-logo { width: min(360px, 80%); margin: 0 auto 1rem; }
+.cta-logo { width: min(360px, 80%); height: auto; margin: 0 auto 1rem; }
 .cta-sub { color: var(--ink-soft); font-size: 1.1rem; }
 .cta .hero-actions { justify-content: center; margin-bottom: 0; }
 .cta-visual { position: relative; margin-top: -10px; height: clamp(260px, 34vw, 420px); }
